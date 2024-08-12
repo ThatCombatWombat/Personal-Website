@@ -51,6 +51,7 @@
   /*  Corner button END  */
 
   .image-container {
+    padding: 0px 10%;
     position: relative;
     display: inline-block;
   }
@@ -59,6 +60,7 @@
     display: block;
     width: 100%;
     height: auto;
+    border: 5px solid white;
     
   }
   
@@ -74,7 +76,18 @@
     border-radius: 25px; 
     text-align: center;}
     
-
+.overlay-text:hover {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    border: 7px solid white; 
+    transform: translate(-50%, 0%); 
+    background-color: #bfff00; 
+    color: #000000; 
+    padding: 10px 20px; 
+    font-size: 20px;
+    border-radius: 25px; 
+    text-align: center;}
     .center {
         border: 5px solid;
         position: absolute;
