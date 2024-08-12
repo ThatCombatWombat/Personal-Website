@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alden's Portfolio</title>
+    <link rel="stylesheet" href="button.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background-color: #373737;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        .project p {
+            color: #ffffff;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <a href="index.html">
+        <button class="corner-button">Home</button>
+      </a>
+
+    <div class="header">
+        <h1>Alden's Programming Portfolio</h1>
+        <p>Welcome to my portfolio. Here are some of the projects I've worked on:</p>
+    </div>
+        
+    <div class="projects">
+        <div class="project">
+            <img src="https://m.media-amazon.com/images/I/61RaKV+BmbL.jpg" alt="Raspberry Pi Zero Handbrake">
+            <h2>Raspberry Pi Zero Handbrake</h2>
+            <p>Designed a custom handbrake for racing games using Raspberry Pi Zero.</p>
+        </div>
+        
+        <div class="project">
+            <img src="apex.png" alt="Game Plugin App">
+            <h2>Game Plugin App</h2>
+            <p>Developed a plugin app that adds new features to existing games.</p>
+        </div>
+
+        <div class="project">
+            <img src="https://i0.wp.com/makezine.com/wp-content/uploads/2019/02/uvindex.jpg?resize=538%2C852&ssl=1" alt="UV Measurement Device">
+            <h2>UV Measurement Device</h2>
+            <p>Created a device to measure UV radiation using sensors and Python.</p>
+        </div>
+
+        <div class="project">
+            <img src="https://files.realpython.com/media/Python-Machine-Learning_Watermarked.c9684236cea2.jpg" alt="Predicting Values">
+            <h2>Predicting Values</h2>
+            <p>Implemented machine learning models to predict values as shown <a href="https://www.w3schools.com/python/python_ml_scale.asp">here</a>.</p>
+        </div>
+
+        <div class="project">
+            <img src="data:image/png;base64,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" alt="Python Automation">
+            <h2>Python Automation</h2>
+            <p>Automated repetitive tasks using Python scripts to improve productivity.</p>
+        </div>
+        
+        <div class="project">
+            <img src="https://i.ytimg.com/vi/VI-1_NquaGU/mqdefault.jpg" alt="C++ Automation">
+            <h2>C++ Automation</h2>
+            <p>Used C++ to send inputs to inactive windows.</p>
+        </div>
+
+        <div class="project">
+            <img src="data:image/png;base64,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" alt="Twitter API">
+            <h2>Twitter API</h2>
+            <p>Built an application to interact with Twitter's API for data analysis and automation.</p>
+        </div>
+
+
+        <div class="project">
+            <img src="yt download.png" alt="YouTube Downloader">
+            <h2>YouTube Downloader</h2>
+            <p>Created a Python script to download videos from YouTube.</p>
+        </div>
+
+        <div class="project">
+            <img src="web.avif" alt="Web Scraping">
+            <h2>Web Scraping</h2>
+            <p>Extracted data and text using Beautiful Soup and requests in python.</p>
+        </div>
+
+        <div class="project">
+            <img src="https://i.ytimg.com/vi/AY9MnQ4x3zk/maxresdefault.jpg" alt="Python Games">
+            <h2>Python Games</h2>
+            <p>Made a flappy bird and worldle game into one using pygame.</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alden's Personal Website</title>
+    <link rel="stylesheet" href="button.css">
     <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -40,6 +42,8 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
+            background-color: #444;
+            border: 5px solid;
         }
         .about, .portfolio, .contact {
             margin-bottom: 40px;
@@ -49,7 +53,7 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            margin-top: 40px;
+            margin-top: 40px;   
         }
         .portfolio img {
             max-width: 100%;
@@ -59,6 +63,22 @@
         p{
             font: 20px Georgia;
         }
+        h1{
+            padding: 0 30px;
+        }
+
+        a:link {
+          color: rgb(0, 255, 225);
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+        a:visited {
+          color: rgb(0, 255, 225);
+          background-color: transparent;
+          font-weight: bolder;
+          text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -67,13 +87,7 @@
         <h1>Welcome to Alden's Personal Website</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+
 
     <div class="container">
         <section id="about" class="about">
@@ -85,29 +99,17 @@
                 </p>
                  <img src="CS50W_pll.png" alt="Data Analysis Tool">
         </section>
-
-        <section id="portfolio" class="portfolio">
-            <h2>My Portfolio</h2>
-            <p>Here are some of the projects I've worked on:</p>
-            <div class="portfolio-item">
-                <h3>This Website</h3>
-                <img src="mysite.webp" alt="Blog Platform">
-                <p>This is my personal Website, which I designed using HTML, CSS and some JavaScript. The full source code of this website is available on <a href="https://github.com/ThatCombatWombat/Personal-Website">my github page</a></p>
-            </div>
-            <div class="portfolio-item">
-                <h3>Python Project: Game Plugins</h3>
-                <img src="apex.png" alt="Data Analysis Tool">
-                <p>I designed an app that runs Plugins for a video game, the app has a GUI and uses the game's api for some tasks.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Contact Me</h2>
-            <p>If you're interested in collaborating or have any job opportunities, please connect with me via email at aldenharrison100@gmail.com.</p>
-        </section>
     </div>
-
+    <div class="center">
+        <div class="image-container">
+            <a href="portfolio.html">        
+                <img src="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2022/04/web-developer-portfolio.png" alt="image">
+                <div class="overlay-text">Click Me!</div>
+            </a>
+    
+        </div>
+    </div>
+    
     <footer>
         <p>Contact me at aldenharrison100@gmail.com</p>
     </footer>

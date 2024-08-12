@@ -1,0 +1,86 @@
+/*  Corner button START  */
+.corner-button {
+    font-family: inherit;
+      letter-spacing: 0.02rem;
+      cursor: pointer;
+      background: transparent;
+      border: 0.2rem solid currentColor;
+      padding: 0.5rem 0.6rem;
+      font-size: 1em;
+      color: #dadada;
+      position: fixed;
+      transition: color 0.3s;
+      z-index: 1;
+      top: 1em;
+      left: 1em;
+      border-radius: 5px;
+      /* zoom: .4; */
+  }
+  .corner-button:hover {
+      color: #a3a3a3;
+      /*color: #00fe0c;*/
+      background: black;
+  }
+  .corner-button:hover::before {
+      width: 0;
+  }
+  .corner-button:hover::after {
+      height: 0;
+  }
+  .corner-button::before, .corner-button::after {
+      content: "";
+      position: absolute;
+      background: rgb(0 0 0 / 50%);
+      z-index: -1;
+      transition: all 0.3s;
+  }
+  .corner-button::before {
+      width: calc(100% - 2rem);
+      height: calc(101% + 1rem);
+      top: -0.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  .corner-button::after {
+      height: calc(100% - 1rem);
+      width: calc(101% + 1rem);
+      left: -0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  /*  Corner button END  */
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: #bfff00; 
+    color: #000000; 
+    padding: 10px 20px; 
+    font-size: 20px;
+    border-radius: 25px; 
+    text-align: center;}
+    
+
+    .center {
+        border: 5px solid;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        
+      }
