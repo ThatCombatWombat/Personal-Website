@@ -61,6 +61,18 @@
     width: 100%;
     height: auto;
     border: 5px solid white;
+    border-radius: 25px;
+    transition: 400ms ease
+    
+  }
+
+  .image-container img:hover {
+    display: block;
+    width: 110%;
+    transition: 200ms ease;
+    height: auto;
+    border: 5px solid #bfff00;
+    border-radius: 25px;
     
   }
   
